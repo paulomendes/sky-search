@@ -1,0 +1,19 @@
+platform :ios, '12.2'
+
+target 'SkySearch' do
+  use_frameworks!
+
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'SVProgressHUD'
+
+  target 'SkySearchTests' do
+    inherit! :search_paths
+    	pod 'Quick'
+      pod 'Nimble'
+      pod 'RxTest'
+  end
+
+end
